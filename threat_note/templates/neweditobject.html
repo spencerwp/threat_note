@@ -3,19 +3,19 @@
 {% block content %}
 <div class="main-panel">
   <nav class="navbar navbar-default navbar-fixed">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Edit Indicator</a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Edit Indicator</a>
+      </div>
+      {% include "userdropdown.html" %}
     </div>
-    {% include "userdropdown.html" %}
-  </div>
-</nav>
+  </nav>
 
       {% if errormessage %}
 
@@ -207,12 +207,6 @@
 
                           {% endif %} {% endif %} {% endfor %}
 
-
-
-                      </div>
-                    </div>
-
-
                     <input type="hidden" class="form-control" name="object" value="{{ entry['object'] }}">
 
                     <div style="float: right;">
@@ -226,6 +220,8 @@
                     </div>
                     <div class="clearfix"></div>
                     </fieldset>
+                    </div>
+                    </div>
                   </form>
                 </div>
               </div>
